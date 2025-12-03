@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony Qin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="profile.jpg" alt="Anthony Qin" class="profile-image">
+            <div class="header-content">
+                <h1>Anthony J. Qin</h1>
+                <p>CS @ WashU</p>
+                <p class="social-links">
+                    <a href="mailto:a.j.qin@wustl.edu"><i class="fas fa-envelope"></i> a.j.qin@wustl.edu</a>
+                    <span>|</span>
+                    <a href="https://github.com/anthonyq7"><i class="fab fa-github"></i></a>
+                    <span>|</span>
+                    <a href="http://linkedin.com/in/anthony-qin-1947942b4/"><i class="fab fa-linkedin"></i></a>
+                </p>
+                <p class="about-text">
+                    Hello! I'm currently studying computer science at WashU. I love learning new things and constantly pushing myself: getting 1% better every day results in a 37x improvement in one year.
+                    My interests generally fall under machine learning, mathematics, and backend development, with a desire to scale and optimize services. In my free time I enjoy hanging out with my dog Milton, weightlifting,
+                    and learning about history (most recently late Imperial China).
+                </p>
+            </div>
+        </header>
+
+        <div class="blocks-grid">
+            <section class="block-card">
+                <h2>Education</h2>
+                <div class="entry-header">
+                    <span class="institution">Washington University in St. Louis</span>
+                    <span class="date">Expected 2027</span>
+                </div>
+                <div class="degree">B.S. in Computer Science</div>
+                <div class="details">
+                    <p><strong>GPA:</strong> 3.97/4.0</p>
+                    <p><strong>Relevant Coursework:</strong> Data Structures and Algorithms (CSE 2407), Discrete Math (CSE 2400), Matrix Algebra (Math 3300), Foundations for Higher Mathematics (Math 3010), Object-Oriented Software Development Lab (CSE 3302), Probability and Statistics (SDS 3020)</p>
+                </div>
+            </section>
+
+            <section class="block-card">
+                <h2>Skills</h2>
+                <p><strong>Languages:</strong> Python, C++, Java, Swift</p>
+                <p><strong>Database:</strong> PostgreSQL, MongoDB</p>
+                <p><strong>Backend:</strong> FastAPI, RESTful API, Redis, SQLAlchemy</p>
+                <p><strong>AI/ML:</strong> PyTorch, Scikit-learn, Sentence Transformers (SBERT), Low-Rank Adaption (LoRA), Transformers</p>
+                <p><strong>Interests:</strong> Machine Learning, Natural Language Processing, Backend Development</p>
+            </section>
+        </div>
+
+        <section class="block-section">
+            <h2>Experience</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3>Portal Career Discovery</h3>
+                            <p class="role">Software Engineer Intern</p>
+                        </div>
+                        <span class="date">Sep 2025 - Present</span>
+                    </div>
+                    <ul class="details">
+                        <li>Collaborating with a team of 6 to build a career discovery platform for students.</li>
+                        <li>Built a resume-job matching RAG (Retrieval-Augmented Generation) microservice that leverages Sentence Transformer (SBERT) bi-encoders and cross-encoders.</li>
+                        <li>Currently automating the collection of jobs and writing unit tests,</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3>Washington University in St. Louis</h3>
+                            <p class="role">Teaching Assistant</p>
+                        </div>
+                        <span class="date">Aug 2025 - Present</span>
+                    </div>
+                    <ul class="details">
+                        <li>Hosted weekly office hours to mentor 120+ students proof-based discrete math (logic, sets, combinatorics, graph theory).</li>
+                        <li>Increased exam averages by ~5% compared to previous semesters.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="block-section projects-section">
+            <h2>Projects</h2>
+            <div class="cards-container">
+                <div class="card project">
+                    <div class="card-header">
+                        <h3><a href="https://pypi.org/project/aegis-detect/">Aegis <i class="fas fa-external-link-alt"></i></a></h3>
+                        <span class="date">Oct 2025 - Dec 2025</span>
+                    </div>
+                    <ul class="details">
+                        <li>Fine-tuned a CodeBERT model to classify AI and human code through semantics, achieving an accuracy of 85.10% and an F1 score of 85.48%.</li>
+                        <li>Sped up AI-code data curation through async OpenAI calls, reducing collection time from days to 20 minutes.</li>
+                        <li>Packaged the tuned model into a CLI tool and published to PyPI, gaining 100+ downloads.</li>
+                    </ul>
+                </div>
+
+                <div class="card project">
+                    <div class="card-header">
+                        <h3><a href="https://github.com/anthonyq7/TriLive">TriLive <i class="fas fa-external-link-alt"></i></a></h3>
+                        <span class="date">Jun 2025 - July 2025</span>
+                    </div>
+                    <ul class="details">
+                        <li>Developed an iOS real-time transit tracking app for the Portland metro area aimed at helping commuters visualize and time their commutes through notifications.</li>
+                        <li>Stored transit route metadata in PostgreSQL, cached recent routes via Redis (reducing latency by 97%), and polled TriMet API for real-time updates.</li>
+                        <li>Managed closed beta testing of 20 users, using feedback to improve UI and app flow.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Anthony Qin.</p>
+        </footer>
+    </div>
+</body>
+</html>
